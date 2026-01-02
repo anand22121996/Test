@@ -1,1 +1,19 @@
-Hello Form Anand!
+Hello Form Anand! on third branch
+ince you’re already tuning Kitty color palettes and font weights to match GNOME/XTerm aesthetics, I can help you craft a ready-to-use config snippet that ensures perfect gamma correction and bold rendering across environments.
+
+Would you like me to prepare:a sample Kitty config that integrates:
+
+Transparency
+
+Gamma correction
+
+Vim-like navigation
+
+Theme include support
+
+so you can drop it straight into kitty.conf?
+
+
+How are you?
+
+Hi
