@@ -6,7 +6,7 @@ Would you like me to prepare:a sample Kitty config that integrates:
 Transparency
 
 Gamma correction
-
+jljljljklji
 Vim-like navigation
 
 Theme include support
@@ -16,4 +16,4 @@ so you can drop it straight into kitty.conf?
 
 How are you?
 
-Hi
+Hwi
