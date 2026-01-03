@@ -1,0 +1,49 @@
+olutely. There are three ways to do this, ranging from "easy/hacky" to "integrated/pro."
+
+Method 1: The Terminal Shortcut (Easiest, No Config)
+Since Neovim runs inside a terminal, you can just use your terminal's paste function.
+6 2 4 
+Copy text from your browser (Ctrl + c).
+
+Go to Neovim and enter Insert Mode (i).
+
+Press Ctrl + Shift + v (on Linux/Windows) or Cmd + v (on Mac).
+
+Note: This pastes the text "dumbly." If you are pasting code, the indentation might get messed up (staircase effect). To prevent this, Neovim handles most pastes automatically now, but if it breaks, type :set paste before pasting.
+
+Method 2: The Native Command (The + Register)
+Vim has separate "clipboards" (called registers). The system clipboard is known as the + register.
+
+Copy text from your browser.
+
+In Neovim (Normal Mode), type: "+p
+
+" (tells Vim "I want to specify a register")
+
++ (selects the System Clipboard register)
+
+p (paste)
+
+Method 3: The "Sync" Config (The Best Way)
+You can configure Neovim to always use your system clipboard. This makes y (yank) copy to your browser, and p (paste) paste from your browser automatically, without needing the extra "+ keystrokes.
+
+Add this line to your init.lua config:
+
+Lua
+
+-- Sync clipboard between OS and Neovim.
+vim.opt.clipboard = 'unnamedplus'
+Important for Linux Users (Fedora/Ubuntu)
+Since you are on Linux (Fedora), Neovim needs a small helper tool to talk to the system clipboard. It doesn't always work out of the box until you install this.
+
+If you use Wayland (Default on modern Fedora): Install wl-clipboard.
+
+Bash
+
+sudo dnf install wl-clipboard
+If you use X11 (Legacy): Install xclip.
+
+Bash
+
+sudo dnf install xclip
+Next Step: To see if your Neovim is ready for clipboard integration right now, you can run a health check command. Would you like to know that command?
