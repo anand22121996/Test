@@ -9,6 +9,8 @@ Gamma correction
 jljljljklji
 Vim-like navigation
 
+Hi from hello file?
+Hi from next
 Theme include support
 
 so you can drop it straight into kitty.conf?
